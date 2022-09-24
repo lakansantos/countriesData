@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #242222;
+}
+
+
+.header{
+    height: 15%;
+    text-align: center;
+}
+
+.header>h1{
+    margin: 20px 0px 10px 0px;
+    color: #2ecc71;
+}
+
+.header>h2{
+    font-weight: normal;
+    font-size: 19px;
+    color: white;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100px;
+
+}
+
+.btn{
+    display: inline-block;
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    
+
+}
+.active{
+    background-color: #2ecc71;
+    transition:  .3s linear;
+}
+
+.toggleContainer{
+    height: 20px;
+}
+.toggleText{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+
+
+}
+
+.graphs{
+
+    color: white;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: green; */
+
+}
+
+.graphs ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    /* justify-content: center; */
+
+
+}
+
+.graphs li{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5px;
+
+    
+    
+}
+
+.charts{
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    /* background-color: #2ecc71; */
+    margin-left: 100px;
+   
+}
+.chartChild{
+    /* width: 500px; */
+    background-color:  #2ecc71;;
+}
+
+.countriesContainer, .languagesContainer{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin-right: 50px;
+    margin-left: -50px;
+
+}
+
+.populationContainer, .countsContainer{
+    color: white;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    
+}
+
+.notice{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .header, .buttonContainer, .toggleContainer, .graphs{
+        display: none;
+    }
+    .notice{
+        display: flex;
+        height: 100vh;
+        background-color: #242222;
+        position: absolute;
+        left: 25%;
+        top: 40%;
+    
+    }
+    .notice h1{
+  
+        color: white;
+        text-align: center;
+        font-size: 51px;
+    }
+}
