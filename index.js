@@ -1,5 +1,5 @@
 
-import {countries} from '/countries.js';
+import {countries} from 'countries.js';
 
 
 let h2Header = document.querySelector('.header>h2');
